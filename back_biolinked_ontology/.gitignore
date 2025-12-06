@@ -1,0 +1,124 @@
+# ---------------------------------------
+#   PYTHON GENERAL
+# ---------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno y configuración
+.env
+.env.*
+*.env
+*.ini
+*.cfg
+*.conf
+
+# Parámetros que no deben subirse
+instance/
+config.py
+settings.py
+secret_key.txt
+
+# ---------------------------------------
+#   FLASK
+# ---------------------------------------
+# Archivos creados por flask run
+*.pid
+
+# Carpeta instance (por defecto guarda configuraciones sensibles)
+instance/
+
+# Cache de Flask
+.flaskenv
+
+# ---------------------------------------
+#   ENTORNO VIRTUAL
+# ---------------------------------------
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# ---------------------------------------
+#   DEPLOY / BUILD / DIST
+# ---------------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ---------------------------------------
+#   LOGS
+# ---------------------------------------
+logs/
+*.log
+*.out
+*.err
+
+# ---------------------------------------
+#   BASES DE DATOS LOCALES
+# ---------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+
+# ---------------------------------------
+#   COMPILADOS / TEMPORALES
+# ---------------------------------------
+*.so
+*.dll
+*.dylib
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# ---------------------------------------
+#   TESTS
+# ---------------------------------------
+.coverage
+.cache/
+htmlcov/
+pytest_cache/
+.tox/
+
+# ---------------------------------------
+#   IDEs / EDITORES
+# ---------------------------------------
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------------------
+#   DOCKER
+# ---------------------------------------
+docker-compose.override.yml
+.env.docker
+
+# ---------------------------------------
+#   NODE (si usas frontend en el mismo repo)
+# ---------------------------------------
+node_modules/
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# ---------------------------------------
+#   OTROS
+# ---------------------------------------
+.DS_Store
+Thumbs.db

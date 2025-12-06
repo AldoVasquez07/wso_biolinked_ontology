@@ -1,0 +1,958 @@
+@prefix biolinked: <https://biolinked.org/ontology#> .
+@prefix entity: <https://biolinked.org/entity/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sighting: <http://biolinked.org/sighting/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sighting:sighting_93a08a83 a biolinked:Observacion ;
+    rdfs:comment "Vi un águila real pasando por cielo." ;
+    biolinked:descripcion "Arequipa, Peru" ;
+    biolinked:fechaRegistro "2025-12-06T12:21:01.377052"^^xsd:dateTime ;
+    biolinked:latitud 12.0451 ;
+    biolinked:longitud -77.1512 ;
+    biolinked:observaTaxón entity:especie_aquila_chrysaetos ;
+    biolinked:registradoPor entity:persona_aldo_vasquez .
+
+entity:especie_ailuropoda_melanoleuca a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Ailuropoda melanoleuca"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q33602> ;
+    biolinked:descripcion "Emblemático oso que se alimenta casi exclusivamente de bambú."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/328672> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/2433436> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q33602> ;
+    biolinked:nombreCientifico "Ailuropoda melanoleuca"^^xsd:string ;
+    biolinked:nombreComun "Panda Gigante"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_china_central ;
+    biolinked:perteneceAClase entity:clase_mammalia ;
+    biolinked:perteneceAFamilia entity:familia_ursidae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_ailuropoda ;
+    biolinked:perteneceAOrden entity:orden_carnivora ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_ailuropoda_melanoleuca_diet,
+        entity:char_eco_ailuropoda_melanoleuca_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_ailuropoda_melanoleuca_length,
+        entity:char_morpho_ailuropoda_melanoleuca_weight ;
+    biolinked:tieneEstadoDeConservación entity:conservation_vulnerable ;
+    biolinked:tieneImagen entity:image_ailuropoda_melanoleuca ;
+    biolinked:tieneRecursoMultimedia entity:image_ailuropoda_melanoleuca ;
+    biolinked:viveEnHábitat entity:habitat_bosques_de_bambú .
+
+entity:especie_canis_lupus a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Canis lupus"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q18498> ;
+    biolinked:descripcion "Ancestro salvaje del perro doméstico, vive en manadas organizadas."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/328607> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/5219173> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q18498> ;
+    biolinked:nombreCientifico "Canis lupus"^^xsd:string ;
+    biolinked:nombreComun "Lobo Gris"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_américa_del_norte,
+        entity:distribution_asia,
+        entity:distribution_europa ;
+    biolinked:perteneceAClase entity:clase_mammalia ;
+    biolinked:perteneceAFamilia entity:familia_canidae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_canis ;
+    biolinked:perteneceAOrden entity:orden_carnivora ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_canis_lupus_diet,
+        entity:char_eco_canis_lupus_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_canis_lupus_length,
+        entity:char_morpho_canis_lupus_weight ;
+    biolinked:tieneEstadoDeConservación entity:conservation_least_concern ;
+    biolinked:tieneImagen entity:image_canis_lupus ;
+    biolinked:tieneRecursoMultimedia entity:image_canis_lupus ;
+    biolinked:viveEnHábitat entity:habitat_bosques,
+        entity:habitat_montañas,
+        entity:habitat_tundra .
+
+entity:especie_falco_peregrinus a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Falco peregrinus"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q171241> ;
+    biolinked:descripcion "El animal más rápido del mundo en picada."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/1049547> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/2480946> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q171241> ;
+    biolinked:nombreCientifico "Falco peregrinus"^^xsd:string ;
+    biolinked:nombreComun "Halcón Peregrino"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_todo_el_mundo_excepto_antártida ;
+    biolinked:perteneceAClase entity:clase_aves ;
+    biolinked:perteneceAFamilia entity:familia_falconidae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_falco ;
+    biolinked:perteneceAOrden entity:orden_falconiformes ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_falco_peregrinus_diet,
+        entity:char_eco_falco_peregrinus_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_falco_peregrinus_weight,
+        entity:char_morpho_falco_peregrinus_wingspan ;
+    biolinked:tieneEstadoDeConservación entity:conservation_least_concern ;
+    biolinked:tieneImagen entity:image_falco_peregrinus ;
+    biolinked:tieneRecursoMultimedia entity:image_falco_peregrinus ;
+    biolinked:viveEnHábitat entity:habitat_acantilados,
+        entity:habitat_ciudades,
+        entity:habitat_costas .
+
+entity:especie_panthera_leo a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Panthera leo"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q140> ;
+    biolinked:descripcion "El león es un gran felino social que vive en manadas."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/328672> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/5219404> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q140> ;
+    biolinked:nombreCientifico "Panthera leo"^^xsd:string ;
+    biolinked:nombreComun "León"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_india,
+        entity:distribution_áfrica_subsahariana ;
+    biolinked:perteneceAClase entity:clase_mammalia ;
+    biolinked:perteneceAFamilia entity:familia_felidae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_panthera ;
+    biolinked:perteneceAOrden entity:orden_carnivora ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_panthera_leo_diet,
+        entity:char_eco_panthera_leo_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_panthera_leo_length,
+        entity:char_morpho_panthera_leo_weight ;
+    biolinked:tieneEstadoDeConservación entity:conservation_vulnerable ;
+    biolinked:tieneImagen entity:image_panthera_leo ;
+    biolinked:tieneRecursoMultimedia entity:image_panthera_leo ;
+    biolinked:viveEnHábitat entity:habitat_pastizales,
+        entity:habitat_sabana .
+
+entity:especie_pinus_sylvestris a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Pinus sylvestris"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q146992> ;
+    biolinked:descripcion "Conífera de amplia distribución en Eurasia."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/1061697> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/5285637> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q146992> ;
+    biolinked:nombreCientifico "Pinus sylvestris"^^xsd:string ;
+    biolinked:nombreComun "Pino Silvestre"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_asia,
+        entity:distribution_europa ;
+    biolinked:perteneceAClase entity:clase_pinopsida ;
+    biolinked:perteneceAFamilia entity:familia_pinaceae ;
+    biolinked:perteneceAFilo entity:filo_pinophyta ;
+    biolinked:perteneceAGénero entity:genero_pinus ;
+    biolinked:perteneceAOrden entity:orden_pinales ;
+    biolinked:perteneceAReino entity:reino_plantae ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_pinus_sylvestris_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_pinus_sylvestris_diameter,
+        entity:char_morpho_pinus_sylvestris_height ;
+    biolinked:tieneEstadoDeConservación entity:conservation_least_concern ;
+    biolinked:tieneImagen entity:image_pinus_sylvestris ;
+    biolinked:tieneRecursoMultimedia entity:image_pinus_sylvestris ;
+    biolinked:viveEnHábitat entity:habitat_bosques_templados,
+        entity:habitat_montañas .
+
+entity:especie_sequoia_sempervirens a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Sequoia sempervirens"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q147498> ;
+    biolinked:descripcion "El árbol más alto del mundo, puede vivir miles de años."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/1061660> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/2684141> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q147498> ;
+    biolinked:nombreCientifico "Sequoia sempervirens"^^xsd:string ;
+    biolinked:nombreComun "Secoya Roja"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_california,
+        entity:distribution_oregón ;
+    biolinked:perteneceAClase entity:clase_pinopsida ;
+    biolinked:perteneceAFamilia entity:familia_cupressaceae ;
+    biolinked:perteneceAFilo entity:filo_pinophyta ;
+    biolinked:perteneceAGénero entity:genero_sequoia ;
+    biolinked:perteneceAOrden entity:orden_pinales ;
+    biolinked:perteneceAReino entity:reino_plantae ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_sequoia_sempervirens_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_sequoia_sempervirens_diameter,
+        entity:char_morpho_sequoia_sempervirens_height ;
+    biolinked:tieneEstadoDeConservación entity:conservation_endangered ;
+    biolinked:tieneImagen entity:image_sequoia_sempervirens ;
+    biolinked:tieneRecursoMultimedia entity:image_sequoia_sempervirens ;
+    biolinked:viveEnHábitat entity:habitat_bosques_costeros,
+        entity:habitat_zonas_húmedas .
+
+entity:especie_ursus_arctos a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Ursus arctos"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15967> ;
+    biolinked:descripcion "Gran mamífero omnívoro con excelente olfato."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/328653> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/2433433> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q15967> ;
+    biolinked:nombreCientifico "Ursus arctos"^^xsd:string ;
+    biolinked:nombreComun "Oso Pardo"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_américa_del_norte,
+        entity:distribution_asia,
+        entity:distribution_europa ;
+    biolinked:perteneceAClase entity:clase_mammalia ;
+    biolinked:perteneceAFamilia entity:familia_ursidae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_ursus ;
+    biolinked:perteneceAOrden entity:orden_carnivora ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_ursus_arctos_diet,
+        entity:char_eco_ursus_arctos_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_ursus_arctos_length,
+        entity:char_morpho_ursus_arctos_weight ;
+    biolinked:tieneEstadoDeConservación entity:conservation_least_concern ;
+    biolinked:tieneImagen entity:image_ursus_arctos ;
+    biolinked:tieneRecursoMultimedia entity:image_ursus_arctos ;
+    biolinked:viveEnHábitat entity:habitat_bosques_templados,
+        entity:habitat_tundra .
+
+biolinked:descripcion a owl:DatatypeProperty ;
+    rdfs:label "descripción"@es ;
+    rdfs:comment "Descripción textual"@es ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+biolinked:equivalenteEnEOL a owl:ObjectProperty ;
+    rdfs:label "equivalente en EOL"@es ;
+    rdfs:comment "Enlace a la entidad equivalente en EOL"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range owl:Thing .
+
+biolinked:equivalenteEnGBIF a owl:ObjectProperty ;
+    rdfs:label "equivalente en GBIF"@es ;
+    rdfs:comment "Enlace a la entidad equivalente en GBIF"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range owl:Thing .
+
+biolinked:equivalenteEnWikidata a owl:ObjectProperty ;
+    rdfs:label "equivalente en Wikidata"@es ;
+    rdfs:comment "Enlace a la entidad equivalente en Wikidata"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range owl:Thing .
+
+biolinked:estatusConservacion a owl:DatatypeProperty ;
+    rdfs:label "estatus de conservación"@es ;
+    rdfs:comment "Estatus de conservación según IUCN"@es ;
+    rdfs:domain biolinked:EstadoConservacion ;
+    rdfs:range xsd:string .
+
+biolinked:fechaRegistro a owl:DatatypeProperty ;
+    rdfs:label "fecha de registro"@es ;
+    rdfs:comment "Fecha y hora del registro"@es ;
+    rdfs:domain biolinked:Observacion ;
+    rdfs:range xsd:dateTime .
+
+biolinked:latitud a owl:DatatypeProperty ;
+    rdfs:label "latitud"@es ;
+    rdfs:comment "Latitud de la observación"@es ;
+    rdfs:domain biolinked:Observacion ;
+    rdfs:range xsd:decimal .
+
+biolinked:longitud a owl:DatatypeProperty ;
+    rdfs:label "longitud"@es ;
+    rdfs:comment "Longitud de la observación"@es ;
+    rdfs:domain biolinked:Observacion ;
+    rdfs:range xsd:decimal .
+
+biolinked:nombreCientifico a owl:DatatypeProperty ;
+    rdfs:label "nombre científico"@es ;
+    rdfs:comment "Nombre científico del taxón"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range xsd:string .
+
+biolinked:nombreComun a owl:DatatypeProperty ;
+    rdfs:label "nombre común"@es ;
+    rdfs:comment "Nombre común de la especie"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range xsd:string .
+
+biolinked:observaTaxón a owl:ObjectProperty ;
+    rdfs:label "observa taxón"@es ;
+    rdfs:comment "Relaciona una observación con el taxón observado"@es ;
+    rdfs:domain biolinked:Observacion ;
+    rdfs:range biolinked:Taxon .
+
+biolinked:ocurreEnDistribución a owl:ObjectProperty ;
+    rdfs:label "ocurre en distribución"@es ;
+    rdfs:comment "Relaciona una especie con su distribución geográfica"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:DistribucionGeografica .
+
+biolinked:perteneceAClase a owl:ObjectProperty ;
+    rdfs:label "pertenece a clase"@es ;
+    rdfs:comment "Relaciona un taxón con su clase"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:ClaseTaxonomica .
+
+biolinked:perteneceAFamilia a owl:ObjectProperty ;
+    rdfs:label "pertenece a familia"@es ;
+    rdfs:comment "Relaciona un taxón con su familia"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:Familia .
+
+biolinked:perteneceAFilo a owl:ObjectProperty ;
+    rdfs:label "pertenece a filo"@es ;
+    rdfs:comment "Relaciona un taxón con su filo"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:Filo .
+
+biolinked:perteneceAGénero a owl:ObjectProperty ;
+    rdfs:label "pertenece a género"@es ;
+    rdfs:comment "Relaciona un taxón con su género"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:Genero .
+
+biolinked:perteneceAOrden a owl:ObjectProperty ;
+    rdfs:label "pertenece a orden"@es ;
+    rdfs:comment "Relaciona un taxón con su orden"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:Orden .
+
+biolinked:perteneceAReino a owl:ObjectProperty ;
+    rdfs:label "pertenece a reino"@es ;
+    rdfs:comment "Relaciona un taxón con su reino"@es ;
+    rdfs:domain biolinked:Taxon ;
+    rdfs:range biolinked:Reino .
+
+biolinked:registradoPor a owl:ObjectProperty ;
+    rdfs:label "registrado por"@es ;
+    rdfs:comment "Relaciona una observación con la persona que la registró"@es ;
+    rdfs:domain biolinked:Observacion ;
+    rdfs:range biolinked:Persona .
+
+biolinked:tieneCaracterísticaEcológica a owl:ObjectProperty ;
+    rdfs:label "tiene característica ecológica"@es ;
+    rdfs:comment "Relaciona una especie con sus características ecológicas"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:CaracteristicaEcologica .
+
+biolinked:tieneCaracterísticaMorfológica a owl:ObjectProperty ;
+    rdfs:label "tiene característica morfológica"@es ;
+    rdfs:comment "Relaciona una especie con sus características morfológicas"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:CaracteristicaMorfologica .
+
+biolinked:tieneEstadoDeConservación a owl:ObjectProperty ;
+    rdfs:label "tiene estado de conservación"@es ;
+    rdfs:comment "Relaciona una especie con su estado de conservación"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:EstadoConservacion .
+
+biolinked:tieneImagen a owl:ObjectProperty ;
+    rdfs:label "tiene imagen"@es ;
+    rdfs:comment "Relaciona una especie con una imagen"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:Imagen .
+
+biolinked:tieneRecursoMultimedia a owl:ObjectProperty ;
+    rdfs:label "tiene recurso multimedia"@es ;
+    rdfs:comment "Relaciona una especie con un recurso multimedia"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:RecursoMultimedia .
+
+biolinked:unidad a owl:DatatypeProperty ;
+    rdfs:label "unidad"@es ;
+    rdfs:comment "Unidad de medida"@es ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+biolinked:url a owl:DatatypeProperty ;
+    rdfs:label "URL"@es ;
+    rdfs:comment "URL del recurso"@es ;
+    rdfs:domain biolinked:RecursoMultimedia ;
+    rdfs:range xsd:anyURI .
+
+biolinked:valor a owl:DatatypeProperty ;
+    rdfs:label "valor"@es ;
+    rdfs:comment "Valor numérico de una característica"@es ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string .
+
+biolinked:viveEnHábitat a owl:ObjectProperty ;
+    rdfs:label "vive en hábitat"@es ;
+    rdfs:comment "Relaciona una especie con su hábitat"@es ;
+    rdfs:domain biolinked:Especie ;
+    rdfs:range biolinked:Habitat .
+
+entity:char_eco_ailuropoda_melanoleuca_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Herbívoro (bambú)"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Herbívoro (bambú)"^^xsd:string .
+
+entity:char_eco_ailuropoda_melanoleuca_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 20 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "20"^^xsd:string .
+
+entity:char_eco_aquila_chrysaetos_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Carnívoro"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Carnívoro"^^xsd:string .
+
+entity:char_eco_aquila_chrysaetos_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 30 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "30"^^xsd:string .
+
+entity:char_eco_canis_lupus_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Carnívoro"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Carnívoro"^^xsd:string .
+
+entity:char_eco_canis_lupus_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 6-8 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "6-8"^^xsd:string .
+
+entity:char_eco_falco_peregrinus_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Carnívoro"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Carnívoro"^^xsd:string .
+
+entity:char_eco_falco_peregrinus_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 15-20 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "15-20"^^xsd:string .
+
+entity:char_eco_panthera_leo_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Carnívoro"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Carnívoro"^^xsd:string .
+
+entity:char_eco_panthera_leo_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 10-14 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "10-14"^^xsd:string .
+
+entity:char_eco_pinus_sylvestris_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 150-300 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "150-300"^^xsd:string .
+
+entity:char_eco_sequoia_sempervirens_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 2000 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "2000"^^xsd:string .
+
+entity:char_eco_ursus_arctos_diet a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Dieta: Omnívoro"@es ;
+    biolinked:descripcion "Tipo de dieta"@es ;
+    biolinked:valor "Omnívoro"^^xsd:string .
+
+entity:char_eco_ursus_arctos_lifespan a biolinked:CaracteristicaEcologica ;
+    rdfs:label "Longevidad: 20-30 años"@es ;
+    biolinked:descripcion "Esperanza de vida"@es ;
+    biolinked:unidad "años"^^xsd:string ;
+    biolinked:valor "20-30"^^xsd:string .
+
+entity:char_morpho_ailuropoda_melanoleuca_length a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Longitud: 1.5 m"@es ;
+    biolinked:descripcion "Longitud promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "1.5"^^xsd:string .
+
+entity:char_morpho_ailuropoda_melanoleuca_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 100 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "100"^^xsd:string .
+
+entity:char_morpho_aquila_chrysaetos_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 4.5 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "4.5"^^xsd:string .
+
+entity:char_morpho_aquila_chrysaetos_wingspan a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Envergadura: 2.2 m"@es ;
+    biolinked:descripcion "Envergadura alar"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "2.2"^^xsd:string .
+
+entity:char_morpho_canis_lupus_length a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Longitud: 1.6 m"@es ;
+    biolinked:descripcion "Longitud promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "1.6"^^xsd:string .
+
+entity:char_morpho_canis_lupus_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 40 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "40"^^xsd:string .
+
+entity:char_morpho_falco_peregrinus_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 0.9 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "0.9"^^xsd:string .
+
+entity:char_morpho_falco_peregrinus_wingspan a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Envergadura: 1.1 m"@es ;
+    biolinked:descripcion "Envergadura alar"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "1.1"^^xsd:string .
+
+entity:char_morpho_panthera_leo_length a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Longitud: 2.5 m"@es ;
+    biolinked:descripcion "Longitud promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "2.5"^^xsd:string .
+
+entity:char_morpho_panthera_leo_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 190 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "190"^^xsd:string .
+
+entity:char_morpho_pinus_sylvestris_diameter a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Diámetro: 1.5 m"@es ;
+    biolinked:descripcion "Diámetro del tronco"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "1.5"^^xsd:string .
+
+entity:char_morpho_pinus_sylvestris_height a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Altura: 35 m"@es ;
+    biolinked:descripcion "Altura promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "35"^^xsd:string .
+
+entity:char_morpho_sequoia_sempervirens_diameter a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Diámetro: 8 m"@es ;
+    biolinked:descripcion "Diámetro del tronco"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "8"^^xsd:string .
+
+entity:char_morpho_sequoia_sempervirens_height a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Altura: 115 m"@es ;
+    biolinked:descripcion "Altura promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "115"^^xsd:string .
+
+entity:char_morpho_ursus_arctos_length a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Longitud: 2.5 m"@es ;
+    biolinked:descripcion "Longitud promedio"@es ;
+    biolinked:unidad "m"^^xsd:string ;
+    biolinked:valor "2.5"^^xsd:string .
+
+entity:char_morpho_ursus_arctos_weight a biolinked:CaracteristicaMorfologica ;
+    rdfs:label "Peso: 180 kg"@es ;
+    biolinked:descripcion "Peso promedio"@es ;
+    biolinked:unidad "kg"^^xsd:string ;
+    biolinked:valor "180"^^xsd:string .
+
+entity:conservation_endangered a biolinked:EstadoConservacion ;
+    rdfs:label "Endangered"@en ;
+    biolinked:estatusConservacion "Endangered"^^xsd:string .
+
+entity:distribution_california a biolinked:DistribucionGeografica ;
+    rdfs:label "California"@es ;
+    biolinked:descripcion "Región: California"@es .
+
+entity:distribution_china_central a biolinked:DistribucionGeografica ;
+    rdfs:label "China central"@es ;
+    biolinked:descripcion "Región: China central"@es .
+
+entity:distribution_eurasia a biolinked:DistribucionGeografica ;
+    rdfs:label "Eurasia"@es ;
+    biolinked:descripcion "Región: Eurasia"@es .
+
+entity:distribution_india a biolinked:DistribucionGeografica ;
+    rdfs:label "India"@es ;
+    biolinked:descripcion "Región: India"@es .
+
+entity:distribution_oregón a biolinked:DistribucionGeografica ;
+    rdfs:label "Oregón"@es ;
+    biolinked:descripcion "Región: Oregón"@es .
+
+entity:distribution_todo_el_mundo_excepto_antártida a biolinked:DistribucionGeografica ;
+    rdfs:label "Todo el mundo excepto Antártida"@es ;
+    biolinked:descripcion "Región: Todo el mundo excepto Antártida"@es .
+
+entity:distribution_áfrica_subsahariana a biolinked:DistribucionGeografica ;
+    rdfs:label "África subsahariana"@es ;
+    biolinked:descripcion "Región: África subsahariana"@es .
+
+entity:genero_ailuropoda a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Ailuropoda"@es ;
+    biolinked:nombreCientifico "Ailuropoda"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_ursidae .
+
+entity:genero_aquila a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Aquila"@es ;
+    biolinked:nombreCientifico "Aquila"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_accipitridae .
+
+entity:genero_canis a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Canis"@es ;
+    biolinked:nombreCientifico "Canis"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_canidae .
+
+entity:genero_falco a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Falco"@es ;
+    biolinked:nombreCientifico "Falco"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_falconidae .
+
+entity:genero_panthera a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Panthera"@es ;
+    biolinked:nombreCientifico "Panthera"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_felidae .
+
+entity:genero_pinus a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Pinus"@es ;
+    biolinked:nombreCientifico "Pinus"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_pinaceae .
+
+entity:genero_sequoia a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Sequoia"@es ;
+    biolinked:nombreCientifico "Sequoia"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_cupressaceae .
+
+entity:genero_ursus a biolinked:Genero,
+        biolinked:Taxon ;
+    rdfs:label "Ursus"@es ;
+    biolinked:nombreCientifico "Ursus"^^xsd:string ;
+    biolinked:perteneceAFamilia entity:familia_ursidae .
+
+entity:habitat_bosques a biolinked:Habitat ;
+    rdfs:label "Bosques"@es ;
+    biolinked:descripcion "Hábitat tipo: Bosques"@es .
+
+entity:habitat_bosques_costeros a biolinked:Habitat ;
+    rdfs:label "Bosques costeros"@es ;
+    biolinked:descripcion "Hábitat tipo: Bosques costeros"@es .
+
+entity:habitat_bosques_de_bambú a biolinked:Habitat ;
+    rdfs:label "Bosques de bambú"@es ;
+    biolinked:descripcion "Hábitat tipo: Bosques de bambú"@es .
+
+entity:habitat_ciudades a biolinked:Habitat ;
+    rdfs:label "Ciudades"@es ;
+    biolinked:descripcion "Hábitat tipo: Ciudades"@es .
+
+entity:habitat_costas a biolinked:Habitat ;
+    rdfs:label "Costas"@es ;
+    biolinked:descripcion "Hábitat tipo: Costas"@es .
+
+entity:habitat_pastizales a biolinked:Habitat ;
+    rdfs:label "Pastizales"@es ;
+    biolinked:descripcion "Hábitat tipo: Pastizales"@es .
+
+entity:habitat_sabana a biolinked:Habitat ;
+    rdfs:label "Sabana"@es ;
+    biolinked:descripcion "Hábitat tipo: Sabana"@es .
+
+entity:habitat_zonas_húmedas a biolinked:Habitat ;
+    rdfs:label "Zonas húmedas"@es ;
+    biolinked:descripcion "Hábitat tipo: Zonas húmedas"@es .
+
+entity:persona_a a biolinked:Persona ;
+    foaf:name "a" .
+
+entity:persona_aldo_vasquez a biolinked:Persona ;
+    foaf:name "Aldo Vasquez" .
+
+entity:conservation_vulnerable a biolinked:EstadoConservacion ;
+    rdfs:label "Vulnerable"@en ;
+    biolinked:estatusConservacion "Vulnerable"^^xsd:string .
+
+entity:especie_aquila_chrysaetos a biolinked:Especie,
+        biolinked:Taxon ;
+    rdfs:label "Aquila chrysaetos"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2092297> ;
+    biolinked:descripcion "Ave rapaz de gran tamaño con excelente visión."@es ;
+    biolinked:equivalenteEnEOL <https://eol.org/pages/1049313> ;
+    biolinked:equivalenteEnGBIF <https://www.gbif.org/species/2480498> ;
+    biolinked:equivalenteEnWikidata <http://www.wikidata.org/entity/Q2092297> ;
+    biolinked:nombreCientifico "Aquila chrysaetos"^^xsd:string ;
+    biolinked:nombreComun "Águila Real"@es ;
+    biolinked:ocurreEnDistribución entity:distribution_américa_del_norte,
+        entity:distribution_eurasia ;
+    biolinked:perteneceAClase entity:clase_aves ;
+    biolinked:perteneceAFamilia entity:familia_accipitridae ;
+    biolinked:perteneceAFilo entity:filo_chordata ;
+    biolinked:perteneceAGénero entity:genero_aquila ;
+    biolinked:perteneceAOrden entity:orden_accipitriformes ;
+    biolinked:perteneceAReino entity:reino_animalia ;
+    biolinked:tieneCaracterísticaEcológica entity:char_eco_aquila_chrysaetos_diet,
+        entity:char_eco_aquila_chrysaetos_lifespan ;
+    biolinked:tieneCaracterísticaMorfológica entity:char_morpho_aquila_chrysaetos_weight,
+        entity:char_morpho_aquila_chrysaetos_wingspan ;
+    biolinked:tieneEstadoDeConservación entity:conservation_least_concern ;
+    biolinked:tieneImagen entity:image_aquila_chrysaetos ;
+    biolinked:tieneRecursoMultimedia entity:image_aquila_chrysaetos ;
+    biolinked:viveEnHábitat entity:habitat_acantilados,
+        entity:habitat_montañas .
+
+entity:familia_accipitridae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Accipitridae"@es ;
+    biolinked:nombreCientifico "Accipitridae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_accipitriformes .
+
+entity:familia_canidae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Canidae"@es ;
+    biolinked:nombreCientifico "Canidae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_carnivora .
+
+entity:familia_cupressaceae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Cupressaceae"@es ;
+    biolinked:nombreCientifico "Cupressaceae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_pinales .
+
+entity:familia_falconidae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Falconidae"@es ;
+    biolinked:nombreCientifico "Falconidae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_falconiformes .
+
+entity:familia_felidae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Felidae"@es ;
+    biolinked:nombreCientifico "Felidae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_carnivora .
+
+entity:familia_pinaceae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Pinaceae"@es ;
+    biolinked:nombreCientifico "Pinaceae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_pinales .
+
+entity:habitat_acantilados a biolinked:Habitat ;
+    rdfs:label "Acantilados"@es ;
+    biolinked:descripcion "Hábitat tipo: Acantilados"@es .
+
+entity:habitat_bosques_templados a biolinked:Habitat ;
+    rdfs:label "Bosques templados"@es ;
+    biolinked:descripcion "Hábitat tipo: Bosques templados"@es .
+
+entity:habitat_tundra a biolinked:Habitat ;
+    rdfs:label "Tundra"@es ;
+    biolinked:descripcion "Hábitat tipo: Tundra"@es .
+
+entity:image_ailuropoda_melanoleuca a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Panda Gigante"@es ;
+    biolinked:descripcion "Fotografía de Ailuropoda melanoleuca"@es ;
+    biolinked:url "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80"^^xsd:anyURI .
+
+entity:image_aquila_chrysaetos a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Águila Real"@es ;
+    biolinked:descripcion "Fotografía de Aquila chrysaetos"@es ;
+    biolinked:url "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=800&q=80"^^xsd:anyURI .
+
+entity:image_canis_lupus a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Lobo Gris"@es ;
+    biolinked:descripcion "Fotografía de Canis lupus"@es ;
+    biolinked:url "https://upload.wikimedia.org/wikipedia/commons/5/5a/Canis_lupus_265b.jpg"^^xsd:anyURI .
+
+entity:image_falco_peregrinus a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Halcón Peregrino"@es ;
+    biolinked:descripcion "Fotografía de Falco peregrinus"@es ;
+    biolinked:url "https://plus.unsplash.com/premium_photo-1661909235962-12afdb447d3b?q=80&w=934&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"^^xsd:anyURI .
+
+entity:image_panthera_leo a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de León"@es ;
+    biolinked:descripcion "Fotografía de Panthera leo"@es ;
+    biolinked:url "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800&q=80"^^xsd:anyURI .
+
+entity:image_pinus_sylvestris a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Pino Silvestre"@es ;
+    biolinked:descripcion "Fotografía de Pinus sylvestris"@es ;
+    biolinked:url "https://upload.wikimedia.org/wikipedia/commons/5/50/Pinus_sylvestris_conos_masculinos.jpg"^^xsd:anyURI .
+
+entity:image_sequoia_sempervirens a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Secoya Roja"@es ;
+    biolinked:descripcion "Fotografía de Sequoia sempervirens"@es ;
+    biolinked:url "https://upload.wikimedia.org/wikipedia/commons/0/03/US_199_Redwood_Highway.jpg"^^xsd:anyURI .
+
+entity:image_ursus_arctos a biolinked:Imagen,
+        biolinked:RecursoMultimedia ;
+    rdfs:label "Imagen de Oso Pardo"@es ;
+    biolinked:descripcion "Fotografía de Ursus arctos"@es ;
+    biolinked:url "https://upload.wikimedia.org/wikipedia/commons/f/f4/Brown_bear_%28Ursus_arctos%29%2C_Viiksimo%2C_Kainuu_region%2C_Finland%2C_16_June_2018_%2843094873292%29.jpg"^^xsd:anyURI .
+
+entity:orden_accipitriformes a biolinked:Orden,
+        biolinked:Taxon ;
+    rdfs:label "Accipitriformes"@es ;
+    biolinked:nombreCientifico "Accipitriformes"^^xsd:string ;
+    biolinked:perteneceAClase entity:clase_aves .
+
+entity:orden_falconiformes a biolinked:Orden,
+        biolinked:Taxon ;
+    rdfs:label "Falconiformes"@es ;
+    biolinked:nombreCientifico "Falconiformes"^^xsd:string ;
+    biolinked:perteneceAClase entity:clase_aves .
+
+entity:clase_pinopsida a biolinked:ClaseTaxonomica,
+        biolinked:Taxon ;
+    rdfs:label "Pinopsida"@es ;
+    biolinked:nombreCientifico "Pinopsida"^^xsd:string ;
+    biolinked:perteneceAFilo entity:filo_pinophyta .
+
+entity:distribution_américa_del_norte a biolinked:DistribucionGeografica ;
+    rdfs:label "América del Norte"@es ;
+    biolinked:descripcion "Región: América del Norte"@es .
+
+entity:distribution_asia a biolinked:DistribucionGeografica ;
+    rdfs:label "Asia"@es ;
+    biolinked:descripcion "Región: Asia"@es .
+
+entity:distribution_europa a biolinked:DistribucionGeografica ;
+    rdfs:label "Europa"@es ;
+    biolinked:descripcion "Región: Europa"@es .
+
+entity:filo_pinophyta a biolinked:Filo,
+        biolinked:Taxon ;
+    rdfs:label "Pinophyta"@es ;
+    biolinked:nombreCientifico "Pinophyta"^^xsd:string ;
+    biolinked:perteneceAReino entity:reino_plantae .
+
+entity:habitat_montañas a biolinked:Habitat ;
+    rdfs:label "Montañas"@es ;
+    biolinked:descripcion "Hábitat tipo: Montañas"@es .
+
+entity:reino_plantae a biolinked:Reino,
+        biolinked:Taxon ;
+    rdfs:label "Plantae"@es ;
+    biolinked:nombreCientifico "Plantae"^^xsd:string .
+
+biolinked:Filo a owl:Class ;
+    rdfs:label "Filo"@es ;
+    rdfs:comment "Nivel taxonómico: Filo"@es .
+
+biolinked:Persona a owl:Class ;
+    rdfs:label "Persona"@es ;
+    rdfs:comment "Persona que registra observaciones"@es .
+
+biolinked:Reino a owl:Class ;
+    rdfs:label "Reino"@es ;
+    rdfs:comment "Nivel taxonómico: Reino"@es .
+
+entity:clase_aves a biolinked:ClaseTaxonomica,
+        biolinked:Taxon ;
+    rdfs:label "Aves"@es ;
+    biolinked:nombreCientifico "Aves"^^xsd:string ;
+    biolinked:perteneceAFilo entity:filo_chordata .
+
+entity:familia_ursidae a biolinked:Familia,
+        biolinked:Taxon ;
+    rdfs:label "Ursidae"@es ;
+    biolinked:nombreCientifico "Ursidae"^^xsd:string ;
+    biolinked:perteneceAOrden entity:orden_carnivora .
+
+entity:orden_pinales a biolinked:Orden,
+        biolinked:Taxon ;
+    rdfs:label "Pinales"@es ;
+    biolinked:nombreCientifico "Pinales"^^xsd:string ;
+    biolinked:perteneceAClase entity:clase_pinopsida .
+
+biolinked:ClaseTaxonomica a owl:Class ;
+    rdfs:label "Clase Taxonómica"@es ;
+    rdfs:comment "Nivel taxonómico: Clase"@es .
+
+entity:clase_mammalia a biolinked:ClaseTaxonomica,
+        biolinked:Taxon ;
+    rdfs:label "Mammalia"@es ;
+    biolinked:nombreCientifico "Mammalia"^^xsd:string ;
+    biolinked:perteneceAFilo entity:filo_chordata .
+
+entity:conservation_least_concern a biolinked:EstadoConservacion ;
+    rdfs:label "Least Concern"@en ;
+    biolinked:estatusConservacion "Least Concern"^^xsd:string .
+
+biolinked:EstadoConservacion a owl:Class ;
+    rdfs:label "Estado de Conservación"@es ;
+    rdfs:comment "Estado de conservación de una especie"@es .
+
+biolinked:Orden a owl:Class ;
+    rdfs:label "Orden"@es ;
+    rdfs:comment "Nivel taxonómico: Orden"@es .
+
+entity:orden_carnivora a biolinked:Orden,
+        biolinked:Taxon ;
+    rdfs:label "Carnivora"@es ;
+    biolinked:nombreCientifico "Carnivora"^^xsd:string ;
+    biolinked:perteneceAClase entity:clase_mammalia .
+
+entity:reino_animalia a biolinked:Reino,
+        biolinked:Taxon ;
+    rdfs:label "Animalia"@es ;
+    biolinked:nombreCientifico "Animalia"^^xsd:string .
+
+biolinked:Observacion a owl:Class ;
+    rdfs:label "Observación"@es ;
+    rdfs:comment "Registro de avistamiento de una especie"@es .
+
+entity:filo_chordata a biolinked:Filo,
+        biolinked:Taxon ;
+    rdfs:label "Chordata"@es ;
+    biolinked:nombreCientifico "Chordata"^^xsd:string ;
+    biolinked:perteneceAReino entity:reino_animalia .
+
+biolinked:Familia a owl:Class ;
+    rdfs:label "Familia"@es ;
+    rdfs:comment "Nivel taxonómico: Familia"@es .
+
+biolinked:Genero a owl:Class ;
+    rdfs:label "Género"@es ;
+    rdfs:comment "Nivel taxonómico: Género"@es .
+
+biolinked:Imagen a owl:Class ;
+    rdfs:label "Imagen"@es ;
+    rdfs:comment "Recurso de imagen"@es .
+
+biolinked:RecursoMultimedia a owl:Class ;
+    rdfs:label "Recurso Multimedia"@es ;
+    rdfs:comment "Recurso multimedia general"@es .
+
+biolinked:DistribucionGeografica a owl:Class ;
+    rdfs:label "Distribución Geográfica"@es ;
+    rdfs:comment "Área geográfica donde se encuentra una especie"@es .
+
+biolinked:Habitat a owl:Class ;
+    rdfs:label "Hábitat"@es ;
+    rdfs:comment "Tipo de hábitat donde vive una especie"@es .
+
+biolinked:CaracteristicaEcologica a owl:Class ;
+    rdfs:label "Característica Ecológica"@es ;
+    rdfs:comment "Característica ecológica de una especie"@es .
+
+biolinked:CaracteristicaMorfologica a owl:Class ;
+    rdfs:label "Característica Morfológica"@es ;
+    rdfs:comment "Característica física de una especie"@es .
+
+biolinked:Especie a owl:Class ;
+    rdfs:label "Especie"@es ;
+    rdfs:comment "Nivel taxonómico: Especie"@es .
+
+biolinked:Taxon a owl:Class ;
+    rdfs:label "Taxón"@es ;
+    rdfs:comment "Entidad taxonómica general"@es .
+
