@@ -10,31 +10,35 @@ import os
 import json
 from decouple import config
 
+
+
+app = Flask(__name__)
+CORS(app, origins=[config('CORS_ORIGIN', default='*')], supports_credentials=True)
+
+# ==================== CONFIGURACIÓN RDF ====================
+graph = Graph()
+
+# Namespaces según la ontología
+BIOLINKED = Namespace("https://biolinked.org/ontology#")
+ENTITY = Namespace("https://biolinked.org/entity/")
+DWC = Namespace("http://rs.tdwg.org/dwc/terms/")
+SCHEMA = Namespace("http://schema.org/")
+SIGHTING = Namespace("http://biolinked.org/sighting/")
+
+# Bind namespaces
+for prefix, ns in [("biolinked", BIOLINKED), ("entity", ENTITY), ("dwc", DWC), 
+                ("schema", SCHEMA), ("sighting", SIGHTING),
+                ("foaf", FOAF), ("rdfs", RDFS), ("xsd", XSD), ("owl", OWL)]:
+    graph.bind(prefix, ns)
+
+# ==================== BASE DE DATOS EN MEMORIA ====================
+especies_db = {}
+sightings_db = []
+
+
 # ============== Inicializando app para render ==============
 def create_app():
-    app = Flask(__name__)
-    CORS(app, origins=[config('CORS_ORIGIN')], supports_credentials=True)
-
-    # ==================== CONFIGURACIÓN RDF ====================
-    graph = Graph()
-
-    # Namespaces según la ontología
-    BIOLINKED = Namespace("https://biolinked.org/ontology#")
-    ENTITY = Namespace("https://biolinked.org/entity/")
-    DWC = Namespace("http://rs.tdwg.org/dwc/terms/")
-    SCHEMA = Namespace("http://schema.org/")
-    SIGHTING = Namespace("http://biolinked.org/sighting/")
-
-    # Bind namespaces
-    for prefix, ns in [("biolinked", BIOLINKED), ("entity", ENTITY), ("dwc", DWC), 
-                    ("schema", SCHEMA), ("sighting", SIGHTING),
-                    ("foaf", FOAF), ("rdfs", RDFS), ("xsd", XSD), ("owl", OWL)]:
-        graph.bind(prefix, ns)
-
-    # ==================== BASE DE DATOS EN MEMORIA ====================
-    especies_db = {}
-    sightings_db = []
-
+    
     # ==================== CARGA DE ARCHIVO RDF ====================
     def load_rdf_file(filename='biodiversity_catalog.ttl', format='turtle'):
         """Carga un archivo RDF y extrae los datos a especies_db"""

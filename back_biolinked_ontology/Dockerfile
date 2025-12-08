@@ -6,7 +6,7 @@
 FROM python:3.11-slim
 
 # Metadatos
-LABEL maintainer="tu-email@ejemplo.com"
+LABEL maintainer="aldo.vasq.lop@gmail.com"
 LABEL description="BioLinkedCatalog Backend API"
 
 # Evitar prompts interactivos
@@ -34,17 +34,14 @@ COPY app.py .
 COPY wsgi.py .
 COPY biodiversity_catalog.ttl .
 
-# Copiar .env si existe (opcional)
-COPY .env* ./ 
-
 # Crear directorio para datos si no existe
-RUN mkdir -p /app/data
+RUN mkdir -p /app/data /app/logs
 
 # Exponer puerto
 EXPOSE 5000
 
 # Variables de entorno
-ENV FLASK_APP=api.py
+ENV FLASK_APP=wsgi.py
 ENV PYTHONUNBUFFERED=1
 ENV FLASK_ENV=production
 
@@ -57,5 +54,5 @@ USER appuser
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:5000/api/health || exit 1
 
-# Comando de inicio con gunicorn (producción)
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--threads", "2", "--timeout", "120", "api:app"]
+# Comando de inicio con gunicorn usando wsgi:app
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--threads", "2", "--timeout", "120", "wsgi:app"]

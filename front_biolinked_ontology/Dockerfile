@@ -47,10 +47,8 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Copiar configuración personalizada de nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Crear usuario nginx si no existe y ajustar permisos
+# Ajustar permisos (pero no cambiar a usuario nginx todavía)
 RUN chown -R nginx:nginx /usr/share/nginx/html && \
-    chown -R nginx:nginx /var/cache/nginx && \
-    chown -R nginx:nginx /var/log/nginx && \
     chmod -R 755 /usr/share/nginx/html
 
 # Exponer puerto 80
@@ -60,8 +58,6 @@ EXPOSE 80
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD wget --quiet --tries=1 --spider http://localhost/ || exit 1
 
-# Usuario no-root por seguridad
-USER nginx
-
+# IMPORTANTE: NO usar USER nginx aquí, nginx necesita permisos de root para iniciar
 # Nginx se ejecuta en foreground
 CMD ["nginx", "-g", "daemon off;"]
