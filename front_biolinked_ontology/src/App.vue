@@ -583,7 +583,7 @@ export default {
   name: 'App',
   data() {
     return {
-      apiUrl: process.env.VUE_APP_API_URL || 'http://localhost:5000/api',
+      apiUrl: process.env.VUE_APP_API_URL,
       currentView: 'home',
       loading: false,
 
